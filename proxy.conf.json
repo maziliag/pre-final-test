@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://catfact.ninja/fact",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+
+<ul *ngIf="displayList == true">
+  <li *ngFor="let city of data; index as i" (click)="this.onClick($event)">
+    {{ city }}
+  </li>
+  <br />
+</ul>
+<button (click)="onRemove()">Delete list</button>
+<br />
+<p>Random fact about cats:</p>
+<p *ngIf="displayFact == true">{{ users.fact }}</p>
+<button (click)="getFact()">Get a fact</button>
